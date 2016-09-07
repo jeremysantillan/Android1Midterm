@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc107"
+    tools:context="com.santillanj.android1midterm.Splash1">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|top"
+        android:src = "@drawable/title"
+        android:layout_marginTop="100dp" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit2"
+        style="@style/SpinKitView.WanderingCubes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+       app:SpinKit_Color="#ffecb3"
+        android:layout_marginBottom="100dp" />
+
+    <TextView
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:text="Jeremy C. Santillan, BSIT-3"
+        android:id="@+id/textView"
+        android:layout_gravity="right|bottom"
+        android:textColor="#ffecb3"
+        android:textIsSelectable="false"
+        android:textStyle="bold|italic"
+        android:textSize="10sp" />
+</FrameLayout>
